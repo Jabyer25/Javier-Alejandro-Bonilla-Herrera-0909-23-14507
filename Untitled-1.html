@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+    <title> EXAMRN FINAL JAVIER BONILLA </title>
+</head>
+
+    <body>
+
+        <h3>Carcular Sueldo</h3>
+
+        <form action="">  
+            Ingresar Nombre Completo =
+            <input type="text" id="nombre">  <br>  <br>  
+            Ingresar Cargo =
+            <input type="text" id="cargo">   
+            Ingresar Cantidad de horas extra trabajadas =
+            <input type="text" id="horas">  
+
+            <input type="button" value="CALCULAR" onclick="alert( sumar(1,2,3) );">  
+        </form>
+
+        <script>
+                
+                var sumar = function(nhoumero1, numero2, numero3){   
+                var horas = parseFloat(document.getElementById("horas").value);  
+                var cargo = parseFloat(document.getElementById("cargo").value);  
+                    
+                    if(cargo="supervisor"){
+                        var resultado = 4500 + 250 + (horas*15.75);
+                    }   
+                return resultado;  
+                    
+                if(cargo="secretaria"){
+                        var resultado2 = 3250 + 250 + (horas*15.75);
+                    }   
+                return resultado2 + ("Nombre: ", nombre);
+
+                if(cargo="mensajero"){
+                        var resultado3 = 2800 + 250 + (horas*15.75);
+                    }   
+                return resultado3;  
+            }
+        </script>
+
+    </body>
+</html>
